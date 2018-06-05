@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor yellowColor];
-    self.title = @"海贼王";
+    self.title = @"One Piece";
     [self.view addSubview:self.tableView];
     
     self.names = @[
