@@ -31,7 +31,6 @@
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
     
-    self.title = self.highlight ? @"释放开启浮窗":@"拖动到此 开启浮窗";
     self.radius_0 = self.highlight ?20:18;
     self.radius_1 = self.highlight ?12:10;
     self.kCoef = self.highlight ?1:0.95;
@@ -64,6 +63,16 @@
     if (highlight) {
         UIImpactFeedbackGenerator*impactLight = [[UIImpactFeedbackGenerator alloc]initWithStyle:UIImpactFeedbackStyleMedium]; 
         [impactLight impactOccurred];
+    }
+}
+-(void)setStyle:(HKFloatAreaViewStyle)style{
+    _style = style;
+    if (style == HKFloatAreaViewStyle_default) {
+        self.backgroundColor = [UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:0.8];
+        self.title = self.highlight ? @"释放开启浮窗":@"拖动到此 开启浮窗";
+    }else if (style == HKFloatAreaViewStyle_cancel){
+         self.backgroundColor = [UIColor colorWithRed:1 green:0 blue:0 alpha:0.8];
+        self.title = self.highlight ? @"释放关闭浮窗":@"拖动到此 关闭浮窗";
     }
 }
 @end

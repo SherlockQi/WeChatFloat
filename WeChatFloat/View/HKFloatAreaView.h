@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum : NSUInteger {
+    HKFloatAreaViewStyle_default,
+    HKFloatAreaViewStyle_cancel,
+}HKFloatAreaViewStyle;
+
+
 @interface HKFloatAreaView : UIView
 @property (nonatomic, assign) BOOL highlight;
+@property (nonatomic, assign) HKFloatAreaViewStyle style ;
 @end
