@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		125AC82820C662900042BB64 /* HKTransitionPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 125AC82720C662900042BB64 /* HKTransitionPush.m */; };
+		125AC82B20C66C6A0042BB64 /* HKTransitionPop.m in Sources */ = {isa = PBXBuildFile; fileRef = 125AC82A20C66C6A0042BB64 /* HKTransitionPop.m */; };
 		12BAA31720C4EB24006F5AF9 /* HKFloatAreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BAA31620C4EB24006F5AF9 /* HKFloatAreaView.m */; };
 		12BAA31D20C53044006F5AF9 /* HKFloatBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BAA31C20C53044006F5AF9 /* HKFloatBall.m */; };
 		12D2622C20BFF63500258C14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D2622B20BFF63500258C14 /* AppDelegate.m */; };
@@ -22,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		125AC82620C662900042BB64 /* HKTransitionPush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKTransitionPush.h; sourceTree = "<group>"; };
+		125AC82720C662900042BB64 /* HKTransitionPush.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKTransitionPush.m; sourceTree = "<group>"; };
+		125AC82920C66C6A0042BB64 /* HKTransitionPop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKTransitionPop.h; sourceTree = "<group>"; };
+		125AC82A20C66C6A0042BB64 /* HKTransitionPop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKTransitionPop.m; sourceTree = "<group>"; };
 		12BAA31520C4EB24006F5AF9 /* HKFloatAreaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKFloatAreaView.h; sourceTree = "<group>"; };
 		12BAA31620C4EB24006F5AF9 /* HKFloatAreaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKFloatAreaView.m; sourceTree = "<group>"; };
 		12BAA31B20C53044006F5AF9 /* HKFloatBall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKFloatBall.h; sourceTree = "<group>"; };
@@ -58,6 +64,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		125AC82220C660500042BB64 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				125AC82620C662900042BB64 /* HKTransitionPush.h */,
+				125AC82720C662900042BB64 /* HKTransitionPush.m */,
+				125AC82920C66C6A0042BB64 /* HKTransitionPop.h */,
+				125AC82A20C66C6A0042BB64 /* HKTransitionPop.m */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
 		12BAA31320C4EAD3006F5AF9 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +143,7 @@
 		12D2622920BFF63500258C14 /* WeChatFloat */ = {
 			isa = PBXGroup;
 			children = (
+				125AC82220C660500042BB64 /* Transition */,
 				12BAA31A20C5192A006F5AF9 /* Other */,
 				12BAA31920C5191C006F5AF9 /* Base */,
 				12BAA31820C518DE006F5AF9 /* Controller */,
@@ -206,9 +224,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				125AC82B20C66C6A0042BB64 /* HKTransitionPop.m in Sources */,
 				12D2623A20BFF63600258C14 /* main.m in Sources */,
 				12BAA31D20C53044006F5AF9 /* HKFloatBall.m in Sources */,
 				12BAA31720C4EB24006F5AF9 /* HKFloatAreaView.m in Sources */,
+				125AC82820C662900042BB64 /* HKTransitionPush.m in Sources */,
 				12D2624F20BFFFD000258C14 /* HKHomeViewController.m in Sources */,
 				12D2624C20BFFFC200258C14 /* HKFirstViewController.m in Sources */,
 				12D2625220C0003E00258C14 /* HKSecondViewController.m in Sources */,

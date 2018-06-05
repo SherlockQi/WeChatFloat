@@ -10,7 +10,7 @@
 #import "AppDelegate.h"
 #import "HKHomeViewController.h"
 #import "HKFloatAreaView.h"
-#import "HKFloatBall.h"
+
 
 
 #define kFloatAreaR  SCREEN_WIDTH * 0.45
@@ -18,17 +18,15 @@
 #define kCoef        1.2
 #define kBallSizeR   60
 
-@interface AppDelegate ()<HKFloatBallDelegate>
+@interface AppDelegate ()<HKFloatBallDelegate,UITextFieldDelegate>
+
+
+@property (nonatomic, strong) HKFloatAreaView *floatArea;
+@property (nonatomic, strong) HKFloatAreaView *cancelFloatArea;
 
 @property (nonatomic, strong) UIScreenEdgePanGestureRecognizer *edgePan;
 @property (nonatomic, strong) CADisplayLink *link;
-@property (nonatomic, strong) HKFloatAreaView *floatArea;
-@property (nonatomic, strong) HKFloatAreaView *cancelFloatArea;
-@property (nonatomic, strong) HKFloatBall *floatBall;
-
-
 @property (nonatomic, assign) BOOL showFloatBall;
-
 
 @end
 
@@ -50,6 +48,7 @@
     self.edgePan = (UIScreenEdgePanGestureRecognizer *)gestureRecognizer;
     [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     [self.window addSubview:self.floatArea];
+    self.tempFloatViewController = self.naviController.viewControllers.lastObject;
 }
 - (void)panBack:(CADisplayLink *)link {
     if (self.edgePan.state == UIGestureRecognizerStateChanged) {
@@ -77,21 +76,33 @@
             }
         }
     }else  if (self.edgePan.state == UIGestureRecognizerStatePossible) {
-        [self.floatArea removeFromSuperview];
-        self.floatArea = nil;
-        [self.link invalidate];
-        self.link = nil;      
-        if (self.showFloatBall) {        
-            [self.window addSubview:self.floatBall];
-        }
+        [UIView animateWithDuration:5 animations:^{
+            self.floatArea.frame = CGRectMake(SCREEN_WIDTH,SCREEN_HEIGHT, kFloatAreaR, kFloatAreaR);
+        } completion:^(BOOL finished) {
+            [self.floatArea removeFromSuperview];
+            self.floatArea = nil;
+            [self.link invalidate];
+            self.link = nil;      
+            if (self.showFloatBall) {        
+                self.floatViewController = self.tempFloatViewController;
+                self.floatBall.iconImageView.image=  [self.floatViewController valueForKey:@"iconImage"];
+                [self.window addSubview:self.floatBall];
+            }
+        }];
     } 
 }
 #pragma mark - HKFloatBallDelegate
 - (void)floatBallDidClick:(HKFloatBall *)floatBall{
-    
+    [self.naviController pushViewController:self.floatViewController animated:YES];
 }
 - (void)floatBallBeginMove:(HKFloatBall *)floatBall{
-    [self.window  insertSubview:self.cancelFloatArea atIndex:1];
+    if (!_cancelFloatArea) {
+         [self.window  insertSubview:self.cancelFloatArea atIndex:1];
+        [UIView animateWithDuration:0.5 animations:^{
+            self.cancelFloatArea.frame = CGRectMake(SCREEN_WIDTH - kFloatAreaR,SCREEN_HEIGHT - kFloatAreaR, kFloatAreaR, kFloatAreaR);
+        }];    
+    }
+   
     CGPoint center_ball = [self.window convertPoint:self.floatBall.center toView:self.cancelFloatArea];
     if (pow((kFloatAreaR - center_ball.x), 2) + pow((kFloatAreaR - center_ball.y), 2)  <= pow((kFloatAreaR), 2)) {
         NSLog(@"------");
@@ -107,12 +118,18 @@
 -(void)floatBallEndMove:(HKFloatBall *)floatBall{
     
     if (self.cancelFloatArea.highlight) {
+        self.tempFloatViewController = nil;
+        self.floatViewController = nil;
         [self.floatBall removeFromSuperview];
         self.floatBall = nil;
     }
-    [self.cancelFloatArea removeFromSuperview];
-    self.cancelFloatArea = nil;
     
+    [UIView animateWithDuration:0.5 animations:^{
+        self.cancelFloatArea.frame = CGRectMake(SCREEN_WIDTH,SCREEN_HEIGHT, kFloatAreaR, kFloatAreaR);
+    } completion:^(BOOL finished) {
+        [self.cancelFloatArea removeFromSuperview];
+        self.cancelFloatArea = nil;
+    }];
 }
 #pragma mark - Setter 
 
@@ -137,7 +154,7 @@
 }
 -(HKFloatAreaView *)cancelFloatArea{
     if (!_cancelFloatArea) {
-        _cancelFloatArea = [[HKFloatAreaView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH - kFloatAreaR,SCREEN_HEIGHT - kFloatAreaR, kFloatAreaR, kFloatAreaR)];;
+        _cancelFloatArea = [[HKFloatAreaView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH,SCREEN_HEIGHT, kFloatAreaR, kFloatAreaR)];;
         _cancelFloatArea.style = HKFloatAreaViewStyle_cancel;
     };
     return _cancelFloatArea;

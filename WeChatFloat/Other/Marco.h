@@ -9,4 +9,3 @@
 #define  SCREEN_WIDTH   [UIScreen mainScreen].bounds.size.width
 #define  SCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
 
-#define color_random RGB(arc4random() % 255,arc4random() % 255,arc4random() % 255,0.2)

@@ -9,7 +9,7 @@
 #import "Marco.h"
 #import "HKHomeViewController.h"
 #import "HKFirstViewController.h"
-#import "HKSecondViewController.h"
+#import "AppDelegate.h"
 
 @interface HKHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -24,9 +24,12 @@
     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
     self.title = @"朋友们";
     [self.view addSubview:self.tableView];
-
 }
-
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    AppDelegate *d = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    NSLog(@"%@",d.floatViewController);
+}
 #pragma <UITableViewDelegate,UITableViewDataSource>
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -48,10 +51,7 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-//    HKFirstViewController *vc = [[HKFirstViewController alloc]init];
-//    [self.navigationController pushViewController:vc animated:YES];
-    
-    HKSecondViewController *vc = [[HKSecondViewController alloc]init];
+    HKFirstViewController *vc = [[HKFirstViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark - Lazy

@@ -19,5 +19,5 @@
 
 @interface HKFloatBall : UIView
 @property (nonatomic, weak) id<HKFloatBallDelegate>delegate;
-
+@property (nonatomic, strong) UIImageView *iconImageView;
 @end

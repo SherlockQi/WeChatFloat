@@ -10,7 +10,7 @@
 #import "Marco.h"
 #define margin 10
 @interface HKFloatBall()
-@property (nonatomic, strong) UIImageView *iconImageView;
+
 
 @end
 @implementation HKFloatBall
@@ -30,7 +30,7 @@
     if (!_iconImageView) {
         _iconImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)];
         _iconImageView.backgroundColor = [UIColor yellowColor];
-        _iconImageView.layer.borderWidth = 5;
+        _iconImageView.layer.borderWidth = 8;
         _iconImageView.layer.borderColor = [UIColor grayColor].CGColor;
         _iconImageView.layer.cornerRadius = self.bounds.size.width/2;
         _iconImageView.layer.masksToBounds = YES;
@@ -67,10 +67,10 @@
         frame.origin.x = margin;
     }
     
-    if (frame.origin.y > SCREEN_HEIGHT - 64) {
-        frame.origin.y = SCREEN_HEIGHT - 64;
-    }else  if (frame.origin.y < 64) {
-        frame.origin.y =  64;
+    if (frame.origin.y > SCREEN_HEIGHT - 20) {
+        frame.origin.y = SCREEN_HEIGHT - frame.size.height;
+    }else  if (frame.origin.y < 20) {
+        frame.origin.y =  20;
     }
     
     [UIView animateWithDuration:0.3 animations:^{

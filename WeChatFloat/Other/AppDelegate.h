@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "HKNavigationController.h"
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "HKFloatBall.h"
 
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, strong) HKNavigationController *naviController;
+@property (nonatomic, strong) HKFloatBall *floatBall;
+@property (nonatomic, strong) UIViewController *tempFloatViewController;
+@property (nonatomic, strong) UIViewController *floatViewController;
 
 - (void)beginScreenEdgePanBack:(UIGestureRecognizer *)gestureRecognizer;
-
 @end
 
