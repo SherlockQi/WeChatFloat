@@ -4,82 +4,76 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WeChatFloat/HKNavigationController.m"
-            timestampString = "549787905.312533"
+            filePath = "WeChatFloat/Float/HKFloatManager.m"
+            timestampString = "549946688.399929"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "HKNavigationController()"
-            landmarkType = "2">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WeChatFloat/Base/HKNavigationController.m"
-            timestampString = "549945069.2470061"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "-navigationController:animationControllerForOperation:fromViewController:toViewController:"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "-panBack:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WeChatFloat/Base/HKNavigationController.m"
-            timestampString = "549945069.247162"
+            filePath = "WeChatFloat/Float/NSObject+hkvc.m"
+            timestampString = "549946688.399994"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "-navigationController:animationControllerForOperation:fromViewController:toViewController:"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "-hk_currentViewController"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WeChatFloat/Base/HKNavigationController.m"
-            timestampString = "549945069.247372"
+            filePath = "WeChatFloat/Float/NSObject+hkvc.m"
+            timestampString = "549946688.400485"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "-navigationController:animationControllerForOperation:fromViewController:toViewController:"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "-hk_currentViewController"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WeChatFloat/Base/HKNavigationController.m"
-            timestampString = "549945069.247525"
+            filePath = "WeChatFloat/Float/NSObject+hkvc.m"
+            timestampString = "549946688.400715"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "-navigationController:animationControllerForOperation:fromViewController:toViewController:"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "-hk_currentViewController"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

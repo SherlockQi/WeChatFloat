@@ -10,6 +10,7 @@
 #import "Marco.h"
 #import "HKHomeViewController.h"
 #import "HKFloatAreaView.h"
+#import "NSObject+hkvc.h"
 
 #define kFloatAreaR  SCREEN_WIDTH * 0.45
 #define kFloatMargin 30
@@ -40,7 +41,7 @@
     self.edgePan = (UIScreenEdgePanGestureRecognizer *)gestureRecognizer;
     [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     [kWindow addSubview:self.floatArea];
-    self.tempFloatViewController = self.naviController.viewControllers.lastObject;
+    self.tempFloatViewController = [self hk_currentViewController];
 }
 - (void)panBack:(CADisplayLink *)link {
     if (self.edgePan.state == UIGestureRecognizerStateChanged) {
@@ -84,12 +85,9 @@
     } 
 }
 
-
-
-
 #pragma mark - HKFloatBallDelegate
 - (void)floatBallDidClick:(HKFloatBall *)floatBall{
-    [self.naviController pushViewController:self.floatViewController animated:YES];
+    [[self hk_currentNavigationController] pushViewController:self.floatViewController animated:YES];
 }
 - (void)floatBallBeginMove:(HKFloatBall *)floatBall{
     if (!_cancelFloatArea) {
@@ -175,5 +173,6 @@
 -(id)mutableCopyWithZone:(NSZone *)zone{
     return [HKFloatManager shared];
 }
+
 
 @end
