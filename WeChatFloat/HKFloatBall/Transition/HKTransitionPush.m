@@ -7,8 +7,7 @@
 //
 
 #import "HKTransitionPush.h"
-//#import "AppDelegate.h"
-#import "Marco.h"
+#import "HKMarco.h"
 #import "HKFloatManager.h"
 
 #define kAuration 0.5
@@ -31,7 +30,6 @@
     [contView addSubview:fromVC.view];
     [contView addSubview:toVC.view];
     
-//    AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     CGRect floatBallRect = [HKFloatManager shared].floatBall.frame;
     
     [fromVC.view addSubview:self.coverView];
@@ -52,8 +50,6 @@
     maskLayerAnimation.delegate = self;
     [maskLayer addAnimation:maskLayerAnimation forKey:@"path"];
     
-//    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-
     [UIView animateWithDuration:kAuration animations:^{
         [HKFloatManager shared].floatBall.alpha = 0;   
     }];

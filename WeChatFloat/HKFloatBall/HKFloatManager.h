@@ -11,13 +11,7 @@
 #import "HKFloatBall.h"
 
 @interface HKFloatManager : NSObject
-
-
 @property (nonatomic, strong) HKFloatBall *floatBall;
-@property (nonatomic, strong) UIViewController *tempFloatViewController;
-@property (nonatomic, strong) UIViewController *floatViewController;
-@property (nonatomic, strong) NSMutableArray<UIViewController *> *vc;
-
 + (instancetype)shared;
-- (void)beginScreenEdgePanBack:(UIGestureRecognizer *)gestureRecognizer;
++ (void)addFloatVc:(NSString *)vcClass;
 @end

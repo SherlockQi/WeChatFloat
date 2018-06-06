@@ -8,7 +8,7 @@
 
 #import "HKTransitionPop.h"
 #import "HKFloatManager.h"
-#import "Marco.h"
+#import "HKMarco.h"
 
 #define kAuration 0.5
 @interface HKTransitionPop()<CAAnimationDelegate>
@@ -30,11 +30,8 @@
     [contView addSubview:toVC.view];
     [contView addSubview:fromVC.view];
     
-//    AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     CGRect floatBallRect = [HKFloatManager shared].floatBall.frame;
-    
     [toVC.view addSubview:self.coverView];
-    
     
     UIBezierPath *maskStartBP =  [UIBezierPath bezierPathWithRoundedRect:CGRectMake(floatBallRect.origin.x, floatBallRect.origin.y,floatBallRect.size.width , floatBallRect.size.height) cornerRadius:floatBallRect.size.height/2];
     
@@ -56,7 +53,6 @@
     [UIView animateWithDuration:kAuration animations:^{
         self.coverView.alpha = 0;  
     }];
-//    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
         [UIView animateWithDuration:kAuration animations:^{
             [HKFloatManager shared].floatBall.alpha = 1;   
         }];

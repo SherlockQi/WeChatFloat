@@ -1,8 +1,8 @@
 //
-//  Marco.h
+//  HKMarco.h
 //  WeChatFloat
 //
-//  Created by HeiKki on 2018/5/31.
+//  Created by HeiKki on 2018/6/6.
 //  Copyright © 2018年 HeiKki. All rights reserved.
 //
 

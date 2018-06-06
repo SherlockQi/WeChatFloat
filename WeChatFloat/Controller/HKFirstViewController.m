@@ -80,12 +80,5 @@
     };
     return _tableView;
 }
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    
-    if (self.navigationController.viewControllers.count > 1) {
-        self.navigationController.interactivePopGestureRecognizer.delegate = (id) self;
-    }
-    self.navigationController.interactivePopGestureRecognizer.enabled = self.navigationController.viewControllers.count != 1;
-}
+
 @end

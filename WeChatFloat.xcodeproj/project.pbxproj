@@ -35,6 +35,7 @@
 		12CA38CB20C7788E00730145 /* HKFloatManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKFloatManager.m; sourceTree = "<group>"; };
 		12CA38CE20C7821700730145 /* NSObject+hkvc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+hkvc.h"; sourceTree = "<group>"; };
 		12CA38CF20C7821700730145 /* NSObject+hkvc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+hkvc.m"; sourceTree = "<group>"; };
+		12CA38F920C7D6E200730145 /* HKMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKMarco.h; sourceTree = "<group>"; };
 		12D2622720BFF63500258C14 /* WeChatFloat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatFloat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D2622A20BFF63500258C14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		12D2622B20BFF63500258C14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		12D2623620BFF63600258C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12D2623820BFF63600258C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12D2623920BFF63600258C14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		12D2624620BFFB6F00258C14 /* Marco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Marco.h; sourceTree = "<group>"; };
 		12D2624A20BFFFC200258C14 /* HKFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKFirstViewController.h; sourceTree = "<group>"; };
 		12D2624B20BFFFC200258C14 /* HKFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKFirstViewController.m; sourceTree = "<group>"; };
 		12D2624D20BFFFD000258C14 /* HKHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKHomeViewController.h; sourceTree = "<group>"; };
@@ -105,22 +105,30 @@
 				12D2623320BFF63600258C14 /* Assets.xcassets */,
 				12D2623520BFF63600258C14 /* LaunchScreen.storyboard */,
 				12D2623920BFF63600258C14 /* main.m */,
-				12D2624620BFFB6F00258C14 /* Marco.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
 		};
-		12CA38C920C7712800730145 /* Float */ = {
+		12CA38C920C7712800730145 /* HKFloatBall */ = {
 			isa = PBXGroup;
 			children = (
-				12BAA31320C4EAD3006F5AF9 /* View */,
-				125AC82220C660500042BB64 /* Transition */,
-				12CA38CE20C7821700730145 /* NSObject+hkvc.h */,
-				12CA38CF20C7821700730145 /* NSObject+hkvc.m */,
 				12CA38CA20C7788E00730145 /* HKFloatManager.h */,
 				12CA38CB20C7788E00730145 /* HKFloatManager.m */,
+				12CA38F820C7D68D00730145 /* Ohter */,
+				12BAA31320C4EAD3006F5AF9 /* View */,
+				125AC82220C660500042BB64 /* Transition */,
 			);
-			path = Float;
+			path = HKFloatBall;
+			sourceTree = "<group>";
+		};
+		12CA38F820C7D68D00730145 /* Ohter */ = {
+			isa = PBXGroup;
+			children = (
+				12CA38CE20C7821700730145 /* NSObject+hkvc.h */,
+				12CA38CF20C7821700730145 /* NSObject+hkvc.m */,
+				12CA38F920C7D6E200730145 /* HKMarco.h */,
+			);
+			path = Ohter;
 			sourceTree = "<group>";
 		};
 		12D2621E20BFF63500258C14 = {
@@ -142,7 +150,7 @@
 		12D2622920BFF63500258C14 /* WeChatFloat */ = {
 			isa = PBXGroup;
 			children = (
-				12CA38C920C7712800730145 /* Float */,
+				12CA38C920C7712800730145 /* HKFloatBall */,
 				12BAA31A20C5192A006F5AF9 /* Other */,
 				12BAA31820C518DE006F5AF9 /* Controller */,
 				12D2623820BFF63600258C14 /* Info.plist */,

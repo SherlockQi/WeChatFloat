@@ -6,10 +6,10 @@
 //  Copyright © 2018年 HeiKki. All rights reserved.
 //
 
-#import "Marco.h"
+#import "HKMarco.h"
 #import "HKHomeViewController.h"
 #import "HKFirstViewController.h"
-#import "AppDelegate.h"
+
 
 @interface HKHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -61,12 +61,5 @@
     };
     return _tableView;
 }
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    
-    if (self.navigationController.viewControllers.count > 1) {
-        self.navigationController.interactivePopGestureRecognizer.delegate = (id) self;
-    }
-    self.navigationController.interactivePopGestureRecognizer.enabled = self.navigationController.viewControllers.count != 1;
-}
+
 @end

@@ -11,7 +11,7 @@
 #import "HKFloatAreaView.h"
 #import "HKTransitionPush.h"
 #import "HKTransitionPop.h"
-#import "Marco.h"
+#import "HKMarco.h"
 #import "NSObject+hkvc.h"
 
 
@@ -21,13 +21,16 @@
 #define kCoef        1.2
 #define kBallSizeR   60
 
-@interface HKFloatManager()<HKFloatBallDelegate,UINavigationControllerDelegate>
+@interface HKFloatManager()<HKFloatBallDelegate,UINavigationControllerDelegate,UIGestureRecognizerDelegate>
 @property (nonatomic, strong) HKFloatAreaView *floatArea;
 @property (nonatomic, strong) HKFloatAreaView *cancelFloatArea;
+@property (nonatomic, strong) UIViewController *tempFloatViewController;
+@property (nonatomic, strong) UIViewController *floatViewController;
 
 @property (nonatomic, strong) UIScreenEdgePanGestureRecognizer *edgePan;
 @property (nonatomic, strong) CADisplayLink *link;
 @property (nonatomic, assign) BOOL showFloatBall;
+@property (nonatomic, strong) NSMutableArray<NSString *> *floatVcClass;
 
 @end
 @implementation HKFloatManager
@@ -37,17 +40,31 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         floatManager = [[super allocWithZone:nil] init];
+        floatManager.floatVcClass = [NSMutableArray array];
+        [floatManager hk_currentNavigationController].interactivePopGestureRecognizer.delegate = floatManager;
+        [floatManager hk_currentNavigationController].delegate = floatManager;
     });
     return floatManager;
 }
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
+    if ([self hk_currentNavigationController].viewControllers.count > 1) {
+         [[HKFloatManager shared] beginScreenEdgePanBack:gestureRecognizer];
+        return YES;
+    }
+    return NO;
+}
 #pragma mark - Action
++ (void)addFloatVc:(NSString *)vcClass{
+     [[HKFloatManager shared].floatVcClass addObject:vcClass];
+}
 - (void)beginScreenEdgePanBack:(UIGestureRecognizer *)gestureRecognizer{
-    self.edgePan = (UIScreenEdgePanGestureRecognizer *)gestureRecognizer;
-    [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
-    [kWindow addSubview:self.floatArea];
-    self.tempFloatViewController = [self hk_currentViewController];
-    [self hk_currentNavigationController].delegate = self;
-    
+
+    if ([self.floatVcClass containsObject:NSStringFromClass([[self hk_currentViewController] class])]){
+        self.edgePan = (UIScreenEdgePanGestureRecognizer *)gestureRecognizer;
+        [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+        [kWindow addSubview:self.floatArea];
+        self.tempFloatViewController = [self hk_currentViewController];
+    }
 }
 - (void)panBack:(CADisplayLink *)link {
     if (self.edgePan.state == UIGestureRecognizerStateChanged) {
@@ -84,8 +101,6 @@
             self.link = nil;      
             if (self.showFloatBall) {        
                 self.floatViewController = self.tempFloatViewController;
-                
-                
                 self.floatBall.iconImageView.image=  [self.floatViewController valueForKey:@"iconImage"];
                 [kWindow addSubview:self.floatBall];
             }
@@ -140,7 +155,7 @@
                                                          fromViewController:(UIViewController *)fromVC
                                                            toViewController:(UIViewController *)toVC{
     
-    UIViewController *vc  = [HKFloatManager shared].floatViewController;
+    UIViewController *vc  = self.floatViewController;
     if (!vc) {
         return nil;
     }
