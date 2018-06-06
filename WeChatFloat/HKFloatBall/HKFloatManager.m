@@ -15,6 +15,8 @@
 #import "NSObject+hkvc.h"
 
 
+#import <objc/runtime.h> 
+
 
 #define kFloatAreaR  SCREEN_WIDTH * 0.45
 #define kFloatMargin 30
@@ -101,7 +103,9 @@
             self.link = nil;      
             if (self.showFloatBall) {        
                 self.floatViewController = self.tempFloatViewController;
-                self.floatBall.iconImageView.image=  [self.floatViewController valueForKey:@"iconImage"];
+                if ([self haveIconImage]) {
+                    self.floatBall.iconImageView.image=  [self.floatViewController valueForKey:@"hk_iconImage"];
+                }
                 [kWindow addSubview:self.floatBall];
             }
         }];
@@ -180,7 +184,21 @@
         return nil;
     }
 }
-
+- (BOOL)haveIconImage{
+    BOOL have = NO;
+    unsigned int outCount = 0;
+    Ivar *ivars = class_copyIvarList([self.floatViewController class], &outCount);  
+    for (unsigned int i = 0; i < outCount; i ++) {
+        Ivar ivar = ivars[i];
+        const char * nameChar = ivar_getName(ivar);
+        NSString *nameStr =[NSString stringWithFormat:@"%s",nameChar];
+        if([nameStr isEqualToString:@"_hk_iconImage"]) {
+            have = YES;
+        }
+    }
+    free(ivars);
+    return have;
+}
 #pragma mark - Setter 
 
 - (void)setShowFloatBall:(BOOL)showFloatBall{

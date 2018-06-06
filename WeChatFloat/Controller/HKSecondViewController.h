@@ -10,6 +10,6 @@
 
 @interface HKSecondViewController : UIViewController
 @property (nonatomic, strong) UIImage *image;
-@property (nonatomic, strong) UIImage *iconImage;
+@property (nonatomic, strong) UIImage *hk_iconImage;
 
 @end

@@ -62,7 +62,7 @@
     HKSecondViewController *vc = [[HKSecondViewController alloc]init];
     vc.image = [UIImage imageNamed:[NSString stringWithFormat:@"%ld",indexPath.row]];
     vc.title = self.names[indexPath.row];
-    vc.iconImage = [UIImage imageNamed:[NSString stringWithFormat:@"icon_%ld",indexPath.row]];
+    vc.hk_iconImage = [UIImage imageNamed:[NSString stringWithFormat:@"icon_%ld",indexPath.row]];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
