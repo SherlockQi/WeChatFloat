@@ -78,6 +78,8 @@
             self.link = nil;      
             if (self.showFloatBall) {        
                 self.floatViewController = self.tempFloatViewController;
+                
+                
                 self.floatBall.iconImageView.image=  [self.floatViewController valueForKey:@"iconImage"];
                 [kWindow addSubview:self.floatBall];
             }

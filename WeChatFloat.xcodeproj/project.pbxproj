@@ -133,6 +133,7 @@
 		12CA38C920C7712800730145 /* Float */ = {
 			isa = PBXGroup;
 			children = (
+				125AC82220C660500042BB64 /* Transition */,
 				12CA38CE20C7821700730145 /* NSObject+hkvc.h */,
 				12CA38CF20C7821700730145 /* NSObject+hkvc.m */,
 				12CA38CA20C7788E00730145 /* HKFloatManager.h */,
@@ -161,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				12CA38C920C7712800730145 /* Float */,
-				125AC82220C660500042BB64 /* Transition */,
 				12BAA31A20C5192A006F5AF9 /* Other */,
 				12BAA31920C5191C006F5AF9 /* Base */,
 				12BAA31820C518DE006F5AF9 /* Controller */,

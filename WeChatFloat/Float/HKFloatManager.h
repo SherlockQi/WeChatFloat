@@ -14,13 +14,10 @@
 @interface HKFloatManager : NSObject
 
 
-//@property (nonatomic, strong) HKNavigationController *naviController;
 @property (nonatomic, strong) HKFloatBall *floatBall;
 @property (nonatomic, strong) UIViewController *tempFloatViewController;
 @property (nonatomic, strong) UIViewController *floatViewController;
 
-
 + (instancetype)shared;
 - (void)beginScreenEdgePanBack:(UIGestureRecognizer *)gestureRecognizer;
-
 @end
