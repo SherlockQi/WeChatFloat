@@ -7,17 +7,21 @@
 //
 
 #import "HKFloatManager.h"
-#import "Marco.h"
 #import "HKHomeViewController.h"
 #import "HKFloatAreaView.h"
+#import "HKTransitionPush.h"
+#import "HKTransitionPop.h"
+#import "Marco.h"
 #import "NSObject+hkvc.h"
+
+
 
 #define kFloatAreaR  SCREEN_WIDTH * 0.45
 #define kFloatMargin 30
 #define kCoef        1.2
 #define kBallSizeR   60
 
-@interface HKFloatManager()<HKFloatBallDelegate>
+@interface HKFloatManager()<HKFloatBallDelegate,UINavigationControllerDelegate>
 @property (nonatomic, strong) HKFloatAreaView *floatArea;
 @property (nonatomic, strong) HKFloatAreaView *cancelFloatArea;
 
@@ -42,6 +46,8 @@
     [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     [kWindow addSubview:self.floatArea];
     self.tempFloatViewController = [self hk_currentViewController];
+    [self hk_currentNavigationController].delegate = self;
+    
 }
 - (void)panBack:(CADisplayLink *)link {
     if (self.edgePan.state == UIGestureRecognizerStateChanged) {
@@ -128,7 +134,37 @@
     }];
 }
 
-
+#pragma UINavigationControllerDelegate
+- (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                            animationControllerForOperation:(UINavigationControllerOperation)operation
+                                                         fromViewController:(UIViewController *)fromVC
+                                                           toViewController:(UIViewController *)toVC{
+    
+    UIViewController *vc  = [HKFloatManager shared].floatViewController;
+    if (!vc) {
+        return nil;
+    }
+    if(operation==UINavigationControllerOperationPush)
+    {
+        if (toVC != vc) {
+            return nil;
+        }
+        HKTransitionPush *transition = [[HKTransitionPush alloc]init];
+        return transition;
+    }
+    else if(operation==UINavigationControllerOperationPop)
+    {
+        if (fromVC != vc) {
+            return nil;
+        }
+        HKTransitionPop *transition = [[HKTransitionPop alloc]init];
+        return transition;
+    }
+    else
+    {
+        return nil;
+    }
+}
 
 #pragma mark - Setter 
 

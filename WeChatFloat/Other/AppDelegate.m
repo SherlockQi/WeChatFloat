@@ -15,8 +15,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     HKHomeViewController *firendListVc = [[HKHomeViewController alloc]init];
-    self.naviController = [[HKNavigationController alloc]initWithRootViewController:firendListVc];
-    self.window.rootViewController = self.naviController;
+    UINavigationController *naviController = [[UINavigationController alloc]initWithRootViewController:firendListVc];
+    naviController.navigationBar.tintColor = [UIColor whiteColor];
+    naviController.navigationBar.barStyle = UIBarStyleBlack;
+    self.window.rootViewController = naviController;
     [self.window makeKeyAndVisible];
     return YES;
 }

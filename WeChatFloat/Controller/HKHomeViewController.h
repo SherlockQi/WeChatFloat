@@ -6,8 +6,8 @@
 //  Copyright © 2018年 HeiKki. All rights reserved.
 //
 
-#import "HKBaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface HKHomeViewController : HKBaseViewController
+@interface HKHomeViewController : UIViewController
 
 @end

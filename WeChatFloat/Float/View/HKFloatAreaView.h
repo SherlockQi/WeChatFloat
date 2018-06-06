@@ -16,5 +16,5 @@ typedef enum : NSUInteger {
 
 @interface HKFloatAreaView : UIView
 @property (nonatomic, assign) BOOL highlight;
-@property (nonatomic, assign) HKFloatAreaViewStyle style ;
+@property (nonatomic, assign) HKFloatAreaViewStyle style;
 @end

@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeChatFloat/Float/HKFloatManager.m"
-            timestampString = "549946688.399929"
+            timestampString = "549959068.177615"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "-panBack:"
             landmarkType = "7">
          </BreakpointContent>
@@ -36,23 +36,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeChatFloat/Float/NSObject+hkvc.m"
-            timestampString = "549946688.399994"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "-hk_currentViewController"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WeChatFloat/Float/NSObject+hkvc.m"
-            timestampString = "549946688.400485"
+            timestampString = "549959068.178112"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -68,11 +52,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeChatFloat/Float/NSObject+hkvc.m"
-            timestampString = "549946688.400715"
+            timestampString = "549959068.178463"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "-hk_currentViewController"
             landmarkType = "7">
          </BreakpointContent>

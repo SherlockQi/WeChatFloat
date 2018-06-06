@@ -13,10 +13,6 @@
 {
     UIWindow *keyWindow  = [UIApplication sharedApplication].keyWindow;
     UIViewController *vc = keyWindow.rootViewController;
-//    while (vc.presentedViewController)
-//    {
-//        vc = vc.presentedViewController;
-//        
         if ([vc isKindOfClass:[UINavigationController class]])
         {
             vc = [(UINavigationController *)vc visibleViewController];
@@ -25,7 +21,6 @@
         {
             vc = [(UITabBarController *)vc selectedViewController];
         }
-//    }
     return vc;
 }
 

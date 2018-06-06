@@ -6,9 +6,9 @@
 //  Copyright © 2018年 HeiKki. All rights reserved.
 //
 
-#import "HKBaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface HKSecondViewController : HKBaseViewController
+@interface HKSecondViewController : UIViewController
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) UIImage *iconImage;
 
