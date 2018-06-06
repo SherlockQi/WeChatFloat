@@ -124,6 +124,13 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		12CA38C920C7712800730145 /* Float */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Float;
+			sourceTree = "<group>";
+		};
 		12D2621E20BFF63500258C14 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +150,7 @@
 		12D2622920BFF63500258C14 /* WeChatFloat */ = {
 			isa = PBXGroup;
 			children = (
+				12CA38C920C7712800730145 /* Float */,
 				125AC82220C660500042BB64 /* Transition */,
 				12BAA31A20C5192A006F5AF9 /* Other */,
 				12BAA31920C5191C006F5AF9 /* Base */,
