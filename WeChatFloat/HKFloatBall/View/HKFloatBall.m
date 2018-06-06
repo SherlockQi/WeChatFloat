@@ -66,9 +66,8 @@
     }else{
         frame.origin.x = margin;
     }
-    
-    if (frame.origin.y > SCREEN_HEIGHT - 20) {
-        frame.origin.y = SCREEN_HEIGHT - frame.size.height;
+    if (frame.origin.y > SCREEN_HEIGHT - 64) {
+        frame.origin.y = SCREEN_HEIGHT -64;
     }else  if (frame.origin.y < 20) {
         frame.origin.y =  20;
     }

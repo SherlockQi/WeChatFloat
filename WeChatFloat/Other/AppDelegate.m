@@ -23,7 +23,8 @@
     self.window.rootViewController = naviController;
     [self.window makeKeyAndVisible];
     
-    [HKFloatManager addFloatVc:@"HKSecondViewController"];
+    //需要写在naviController后面
+    [HKFloatManager addFloatVcs:@[@"HKSecondViewController"]];
     return YES;
 }
 

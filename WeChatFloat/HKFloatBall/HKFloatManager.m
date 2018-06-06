@@ -48,6 +48,14 @@
     });
     return floatManager;
 }
++ (void)addFloatVcs:(NSArray<NSString *>*)vcClass{
+    [vcClass enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (![[HKFloatManager shared].floatVcClass containsObject:obj]) {     
+            [[HKFloatManager shared].floatVcClass addObject:obj];
+        }
+    }];
+}
+
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
     if ([self hk_currentNavigationController].viewControllers.count > 1) {
          [[HKFloatManager shared] beginScreenEdgePanBack:gestureRecognizer];
@@ -56,9 +64,7 @@
     return NO;
 }
 #pragma mark - Action
-+ (void)addFloatVc:(NSString *)vcClass{
-     [[HKFloatManager shared].floatVcClass addObject:vcClass];
-}
+
 - (void)beginScreenEdgePanBack:(UIGestureRecognizer *)gestureRecognizer{
 
     if ([self.floatVcClass containsObject:NSStringFromClass([[self hk_currentViewController] class])]){

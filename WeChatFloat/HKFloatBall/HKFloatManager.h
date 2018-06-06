@@ -13,5 +13,5 @@
 @interface HKFloatManager : NSObject
 @property (nonatomic, strong) HKFloatBall *floatBall;
 + (instancetype)shared;
-+ (void)addFloatVc:(NSString *)vcClass;
++ (void)addFloatVcs:(NSArray<NSString *>*)vcClass;
 @end
