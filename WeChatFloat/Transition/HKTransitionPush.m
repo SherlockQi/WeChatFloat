@@ -7,9 +7,11 @@
 //
 
 #import "HKTransitionPush.h"
-#import "AppDelegate.h"
+//#import "AppDelegate.h"
 #import "Marco.h"
+#import "HKFloatManager.h"
 
+#define kAuration 0.5
 @interface HKTransitionPush()<CAAnimationDelegate>
 @property (nonatomic,strong)id<UIViewControllerContextTransitioning> transitionContext;
 @property (nonatomic, strong) UIView *coverView;
@@ -17,7 +19,7 @@
 @implementation HKTransitionPush
 -(NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {
-    return 0.5;
+    return kAuration;
 }
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
     self.transitionContext=transitionContext;
@@ -29,12 +31,10 @@
     [contView addSubview:fromVC.view];
     [contView addSubview:toVC.view];
     
-    AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    CGRect floatBallRect = appdelegate.floatBall.frame;
-   
+//    AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    CGRect floatBallRect = [HKFloatManager shared].floatBall.frame;
     
     [fromVC.view addSubview:self.coverView];
-    
     
     UIBezierPath *maskStartBP =  [UIBezierPath bezierPathWithRoundedRect:CGRectMake(floatBallRect.origin.x, floatBallRect.origin.y,floatBallRect.size.width , floatBallRect.size.height) cornerRadius:floatBallRect.size.height/2];
 
@@ -47,10 +47,16 @@
     CABasicAnimation *maskLayerAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
     maskLayerAnimation.fromValue = (__bridge id)(maskStartBP.CGPath);
     maskLayerAnimation.toValue = (__bridge id)((maskFinalBP.CGPath));
-    maskLayerAnimation.duration = [self transitionDuration:transitionContext];
+    maskLayerAnimation.duration = kAuration;
     maskLayerAnimation.timingFunction = [CAMediaTimingFunction  functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     maskLayerAnimation.delegate = self;
     [maskLayer addAnimation:maskLayerAnimation forKey:@"path"];
+    
+//    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+
+    [UIView animateWithDuration:kAuration animations:^{
+        [HKFloatManager shared].floatBall.alpha = 0;   
+    }];
 }
 #pragma mark - CABasicAnimation的Delegate
 
@@ -59,6 +65,7 @@
     [self.transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey].view.layer.mask = nil;
     [self.transitionContext viewControllerForKey:UITransitionContextToViewControllerKey].view.layer.mask = nil;
     [self.coverView removeFromSuperview];
+    
 }
 -(UIView *)coverView{
     if (!_coverView) {

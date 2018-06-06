@@ -7,12 +7,10 @@
 //
 
 #import "HKSecondViewController.h"
-#import "AppDelegate.h"
+#import "HKFloatManager.h"
 
-@interface HKSecondViewController ()<UIGestureRecognizerDelegate,UINavigationControllerDelegate>
+@interface HKSecondViewController ()<UIGestureRecognizerDelegate>
 @property (nonatomic, strong) UIImageView *imageView;
-
-
 @end
 
 @implementation HKSecondViewController
@@ -23,31 +21,10 @@
     [self.view addSubview:_imageView];
     _imageView.image = self.image;
 }
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    UIViewController *vc  = appDelegate.floatViewController;
-    if (self == vc && appDelegate.floatBall) {
-        [UIView animateWithDuration:0.5 animations:^{
-            appDelegate.floatBall.alpha = 0;   
-        }];
-    }
-}
-- (void)viewDidDisappear:(BOOL)animated{
-    [super viewDidDisappear:animated];
-    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    UIViewController *vc  = appDelegate.floatViewController;
-    if (self == vc && appDelegate.floatBall) {
-        [UIView animateWithDuration:0.5 animations:^{
-            appDelegate.floatBall.alpha = 1;   
-        }];
-    }
-}
+
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
-    AppDelegate * appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
-    [appDelegate beginScreenEdgePanBack:gestureRecognizer];
+    [[HKFloatManager shared] beginScreenEdgePanBack:gestureRecognizer];
     return YES;
 }
-
 
 @end

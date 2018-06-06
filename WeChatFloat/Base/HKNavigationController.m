@@ -9,7 +9,8 @@
 #import "HKNavigationController.h"
 #import "HKTransitionPush.h"
 #import "HKTransitionPop.h"
-#import "AppDelegate.h"
+//#import "AppDelegate.h"
+#import "HKFloatManager.h"
 
 @interface HKNavigationController ()<UINavigationControllerDelegate>
 
@@ -21,7 +22,6 @@
     [super viewDidLoad];
     self.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationBar.barStyle = UIBarStyleBlack;
-//    [self setNavigationBarHidden:YES animated:YES];
     self.delegate = self;
 }
 
@@ -30,9 +30,7 @@
                                                          fromViewController:(UIViewController *)fromVC
                                                            toViewController:(UIViewController *)toVC{
     
-    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    UIViewController *vc  = appDelegate.floatViewController;
-    
+    UIViewController *vc  = [HKFloatManager shared].floatViewController;
     if (!vc) {
         return nil;
     }

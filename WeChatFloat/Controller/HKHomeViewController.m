@@ -27,8 +27,8 @@
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    AppDelegate *d = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    NSLog(@"%@",d.floatViewController);
+//    AppDelegate *d = (AppDelegate *)[UIApplication sharedApplication].delegate;
+//    NSLog(@"%@",d.floatViewController);
 }
 #pragma <UITableViewDelegate,UITableViewDataSource>
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{

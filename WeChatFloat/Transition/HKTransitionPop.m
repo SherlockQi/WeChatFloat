@@ -7,9 +7,10 @@
 //
 
 #import "HKTransitionPop.h"
-#import "AppDelegate.h"
+#import "HKFloatManager.h"
 #import "Marco.h"
 
+#define kAuration 0.5
 @interface HKTransitionPop()<CAAnimationDelegate>
 @property (nonatomic,strong)id<UIViewControllerContextTransitioning> transitionContext;
 @property (nonatomic, strong) UIView *coverView;
@@ -17,7 +18,7 @@
 @implementation HKTransitionPop
 -(NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext
 {
-    return 0.5;
+    return kAuration;
 }
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
     self.transitionContext=transitionContext;
@@ -29,9 +30,8 @@
     [contView addSubview:toVC.view];
     [contView addSubview:fromVC.view];
     
-    AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    CGRect floatBallRect = appdelegate.floatBall.frame;
-    
+//    AppDelegate *appdelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    CGRect floatBallRect = [HKFloatManager shared].floatBall.frame;
     
     [toVC.view addSubview:self.coverView];
     
@@ -47,15 +47,20 @@
     CABasicAnimation *maskLayerAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
     maskLayerAnimation.toValue = (__bridge id)(maskStartBP.CGPath);
     maskLayerAnimation.fromValue = (__bridge id)((maskFinalBP.CGPath));
-    maskLayerAnimation.duration = [self transitionDuration:transitionContext];
+    maskLayerAnimation.duration = kAuration;
     maskLayerAnimation.timingFunction = [CAMediaTimingFunction  functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     maskLayerAnimation.delegate = self;
     [maskLayer addAnimation:maskLayerAnimation forKey:@"path"];
     
     
-    [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
+    [UIView animateWithDuration:kAuration animations:^{
         self.coverView.alpha = 0;  
     }];
+//    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        [UIView animateWithDuration:kAuration animations:^{
+            [HKFloatManager shared].floatBall.alpha = 1;   
+        }];
+    
 }
 #pragma mark - CABasicAnimation的Delegate
 
