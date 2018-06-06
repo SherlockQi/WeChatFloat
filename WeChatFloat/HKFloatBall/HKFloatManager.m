@@ -94,7 +94,7 @@
             }
         }
     }else  if (self.edgePan.state == UIGestureRecognizerStatePossible) {
-        [UIView animateWithDuration:5 animations:^{
+        [UIView animateWithDuration:0.5 animations:^{
             self.floatArea.frame = CGRectMake(SCREEN_WIDTH,SCREEN_HEIGHT, kFloatAreaR, kFloatAreaR);
         } completion:^(BOOL finished) {
             [self.floatArea removeFromSuperview];
@@ -123,10 +123,8 @@
             self.cancelFloatArea.frame = CGRectMake(SCREEN_WIDTH - kFloatAreaR,SCREEN_HEIGHT - kFloatAreaR, kFloatAreaR, kFloatAreaR);
         }];    
     }
-    
     CGPoint center_ball = [kWindow convertPoint:self.floatBall.center toView:self.cancelFloatArea];
     if (pow((kFloatAreaR - center_ball.x), 2) + pow((kFloatAreaR - center_ball.y), 2)  <= pow((kFloatAreaR), 2)) {
-        NSLog(@"------");
         if (!self.cancelFloatArea.highlight) {
             self.cancelFloatArea.highlight = YES;
         }
@@ -244,6 +242,4 @@
 -(id)mutableCopyWithZone:(NSZone *)zone{
     return [HKFloatManager shared];
 }
-
-
 @end
