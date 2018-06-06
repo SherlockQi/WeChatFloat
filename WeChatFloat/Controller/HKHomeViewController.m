@@ -13,22 +13,15 @@
 
 @interface HKHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
-
 @end
 
 @implementation HKHomeViewController
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
     self.title = @"朋友们";
     [self.view addSubview:self.tableView];
-}
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-//    AppDelegate *d = (AppDelegate *)[UIApplication sharedApplication].delegate;
-//    NSLog(@"%@",d.floatViewController);
 }
 #pragma <UITableViewDelegate,UITableViewDataSource>
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
