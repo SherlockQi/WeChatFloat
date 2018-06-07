@@ -15,8 +15,9 @@ https://github.com/SherlockQi/WeChatFloat
 [HKFloatManager addFloatVcs:@[@"HKSecondViewController"]];
 ```
 
-##使用到的技术点
-#####监听侧滑返回
+使用到的技术点
+
+监听侧滑返回
 ```   
 //设置边缘侧滑代理
 self.navigationController.interactivePopGestureRecognizer.delegate = self;
@@ -82,7 +83,7 @@ self.navigationController.interactivePopGestureRecognizer.delegate = self;
     } 
 }
 ```
-#####监听浮窗移动/点击
+监听浮窗移动/点击
 ```
 #import "HKFloatBall.h" 类为浮窗视图类
 //点击浮窗后让代理push之前保留起来的控制器
@@ -112,7 +113,7 @@ self.navigationController.interactivePopGestureRecognizer.delegate = self;
 }
 }
 ```
-#####自定义push/pop动画
+自定义push/pop动画
 ```
  //设置navigationController代理
  self.navigationController.delegate = self;
@@ -197,7 +198,7 @@ HKTransitionPush HKTransitionPop 代码类似已HKTransitionPush为例
 }
 ```
 
-#####解耦
+解耦
 ```    
 将所有代码集中在 #import "HKFloatManager.h" 中
 ```
@@ -209,7 +210,7 @@ HKTransitionPush HKTransitionPop 代码类似已HKTransitionPush为例
 若需要设置浮窗头像,设置该控制器的"hk_iconImage"
 @property (nonatomic, strong) UIImage *hk_iconImage;
 ```
-####Tips
+Tips
 
 
 - 震动反馈
