@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeChatFloat/HKFloatBall/View/HKFloatBall.m"
-            timestampString = "549970445.054266"
+            timestampString = "549973649.699123"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "-endTouch:"
             landmarkType = "7">
          </BreakpointContent>
