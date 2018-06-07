@@ -69,7 +69,7 @@ self.navigationController.interactivePopGestureRecognizer.delegate = self;
                     self.showFloatBall = YES;
                 }
               ...
-    }else  if (self.edgePan.state == UIGestureRecognizerStatePossible) {
+    }else  if(self.edgePan.state == UIGestureRecognizerStatePossible) {
        /*
         * 停止CADisplayLink
         * 隐藏右下视图
@@ -270,6 +270,5 @@ UIImpactFeedbackGenerator*impactLight = [[UIImpactFeedbackGenerator alloc]initWi
     return have;
 }
 ```
-
 欢迎(跪求) Star.
 
