@@ -20,7 +20,6 @@
     _imageView = [[UIImageView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:_imageView];
     _imageView.image = self.image;
-    self.navigationController.interactivePopGestureRecognizer.delegate = self;
 }
 
 
