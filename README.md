@@ -2,7 +2,7 @@
 仿微信浮窗功能
 
 
-![image](https://github.com/SherlockQi/WeChatFloat/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE.gif)
+![image](https://github.com/SherlockQi/HKNote/blob/master/image/WeChatFloat.gif)
 
 
 微信的大佬一定用了了不起的技术,我这里只是实现效果.
