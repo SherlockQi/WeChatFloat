@@ -57,7 +57,7 @@
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
     if ([self hk_currentNavigationController].viewControllers.count > 1) {
-         [[HKFloatManager shared] beginScreenEdgePanBack:gestureRecognizer];
+        [[HKFloatManager shared] beginScreenEdgePanBack:gestureRecognizer];
         return YES;
     }
     return NO;
@@ -65,7 +65,7 @@
 #pragma mark - Action
 
 - (void)beginScreenEdgePanBack:(UIGestureRecognizer *)gestureRecognizer{
-
+    
     if ([self.floatVcClass containsObject:NSStringFromClass([[self hk_currentViewController] class])]){
         self.edgePan = (UIScreenEdgePanGestureRecognizer *)gestureRecognizer;
         [self.link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
@@ -164,27 +164,23 @@
                                                            toViewController:(UIViewController *)toVC{
     
     UIViewController *vc  = self.floatViewController;
-    if (!vc) {
-        return nil;
-    }
-    if(operation==UINavigationControllerOperationPush)
-    {
-        if (toVC != vc) {
+    if (vc) {
+        if(operation==UINavigationControllerOperationPush){
+            if (toVC != vc) {
+                return nil;
+            }
+            HKTransitionPush *transition = [[HKTransitionPush alloc]init];
+            return transition;
+        }else if(operation==UINavigationControllerOperationPop){
+            if (fromVC != vc) {
+                return nil;
+            }
+            HKTransitionPop *transition = [[HKTransitionPop alloc]init];
+            return transition;
+        }else{
             return nil;
         }
-        HKTransitionPush *transition = [[HKTransitionPush alloc]init];
-        return transition;
-    }
-    else if(operation==UINavigationControllerOperationPop)
-    {
-        if (fromVC != vc) {
-            return nil;
-        }
-        HKTransitionPop *transition = [[HKTransitionPop alloc]init];
-        return transition;
-    }
-    else
-    {
+    }else{
         return nil;
     }
 }
