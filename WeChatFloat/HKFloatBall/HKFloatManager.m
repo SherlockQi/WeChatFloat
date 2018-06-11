@@ -112,6 +112,7 @@
                 if ([self haveIconImage]) {
                     self.floatBall.iconImageView.image=  [self.floatViewController valueForKey:@"hk_iconImage"];
                 }
+                self.floatBall.alpha = 1;
                 [kWindow addSubview:self.floatBall];
             }
         }];
