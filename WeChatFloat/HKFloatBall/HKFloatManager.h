@@ -56,6 +56,8 @@ if (vc) {
  
  可以在interactivePopGestureRecognizer代理中调用该方法 并删除HKFloatManager.m 中的第45行
  
+ [[HKFloatManager shared] beginScreenEdgePanBack:gestureRecognizer];
+ 
  如FDFullscreenPopGesture
  可以在 UINavigationController+FDFullscreenPopGesture.m 的
  - (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer 返回 YES 前
