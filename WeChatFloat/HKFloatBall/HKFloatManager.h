@@ -15,7 +15,7 @@
 @property (nonatomic, strong) UIViewController *floatViewController;
 
 + (instancetype)shared;
-+ (void)addFloatVcs:(NSArray<NSString *>*)vcClass;//注意.在导航栏实例化之后调用
++ (void)addFloatVcs:(NSArray<NSString *>*)vcClass;//注意.在导航控制器实例化之后调用
 - (void)beginScreenEdgePanBack:(UIGestureRecognizer *)gestureRecognizer;
 
 @end
