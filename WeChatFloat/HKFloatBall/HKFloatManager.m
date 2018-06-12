@@ -26,7 +26,6 @@
 @property (nonatomic, strong) HKFloatAreaView *floatArea;
 @property (nonatomic, strong) HKFloatAreaView *cancelFloatArea;
 @property (nonatomic, strong) UIViewController *tempFloatViewController;
-@property (nonatomic, strong) UIViewController *floatViewController;
 
 @property (nonatomic, strong) UIScreenEdgePanGestureRecognizer *edgePan;
 @property (nonatomic, strong) CADisplayLink *link;
