@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeChatFloat/HKFloatBall/HKFloatManager.m"
-            timestampString = "550385412.2384911"
+            timestampString = "550486750.293576"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "+shared"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeChatFloat/HKFloatBall/HKFloatManager.m"
-            timestampString = "550385412.238887"
+            timestampString = "550486750.293686"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "-panBack:"
             landmarkType = "7">
          </BreakpointContent>
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeChatFloat/HKFloatBall/HKFloatManager.m"
-            timestampString = "550385412.239152"
+            timestampString = "550486750.2937419"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "-beginScreenEdgePanBack:"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeChatFloat/HKFloatBall/HKFloatManager.m"
-            timestampString = "550385412.239367"
+            timestampString = "550486750.293794"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "-navigationController:animationControllerForOperation:fromViewController:toViewController:"
             landmarkType = "7">
          </BreakpointContent>
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeChatFloat/HKFloatBall/HKFloatManager.m"
-            timestampString = "550385412.23958"
+            timestampString = "550486750.293842"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
             landmarkName = "-navigationController:animationControllerForOperation:fromViewController:toViewController:"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeChatFloat/HKFloatBall/HKFloatManager.m"
-            timestampString = "550385412.239792"
+            timestampString = "550486750.293891"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "-gestureRecognizerShouldBegin:"
             landmarkType = "7">
          </BreakpointContent>
