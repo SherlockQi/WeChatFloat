@@ -6,6 +6,20 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		1223CD5020D259B6009BCB18 /* OCLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1223CD5320D259B7009BCB18 /* Build configuration list for PBXAggregateTarget "OCLint" */;
+			buildPhases = (
+				12EAC90320D8B0B300D23FA9 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = OCLint;
+			productName = OCLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		125AC82820C662900042BB64 /* HKTransitionPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 125AC82720C662900042BB64 /* HKTransitionPush.m */; };
 		125AC82B20C66C6A0042BB64 /* HKTransitionPop.m in Sources */ = {isa = PBXBuildFile; fileRef = 125AC82A20C66C6A0042BB64 /* HKTransitionPop.m */; };
@@ -188,6 +202,10 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = HeiKki;
 				TargetAttributes = {
+					1223CD5020D259B6009BCB18 = {
+						CreatedOnToolsVersion = 9.3.1;
+						ProvisioningStyle = Automatic;
+					};
 					12D2622620BFF63500258C14 = {
 						CreatedOnToolsVersion = 9.3.1;
 						ProvisioningStyle = Automatic;
@@ -208,6 +226,7 @@
 			projectRoot = "";
 			targets = (
 				12D2622620BFF63500258C14 /* WeChatFloat */,
+				1223CD5020D259B6009BCB18 /* OCLint */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +242,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12EAC90320D8B0B300D23FA9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "source ~/.bash_profile\ncd ${SRCROOT}\nxcodebuild -scheme WeChatFloat -workspace WeChatFloat.xcworkspace clean\nxcodebuild -scheme WeChatFloat -workspace WeChatFloat.xcworkspace | xcpretty -r json-compilation-database --output compile_commands.json\noclint-json-compilation-database -exclude Pods -exclude build -exclude Internal -exclude ThirdParties -- -report-type xcode";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		12D2622320BFF63500258C14 /* Sources */ = {
@@ -257,6 +292,24 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1223CD5120D259B7009BCB18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8TJ9GDFV36;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1223CD5220D259B7009BCB18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8TJ9GDFV36;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		12D2623B20BFF63600258C14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -400,6 +453,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1223CD5320D259B7009BCB18 /* Build configuration list for PBXAggregateTarget "OCLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1223CD5120D259B7009BCB18 /* Debug */,
+				1223CD5220D259B7009BCB18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		12D2622220BFF63500258C14 /* Build configuration list for PBXProject "WeChatFloat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

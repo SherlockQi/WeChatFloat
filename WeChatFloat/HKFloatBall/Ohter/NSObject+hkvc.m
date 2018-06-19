@@ -11,16 +11,33 @@
 @implementation NSObject (hkvc)
 - (UIViewController *)hk_currentViewController
 {
-    UIWindow *keyWindow  = [UIApplication sharedApplication].keyWindow;
-    UIViewController *vc = keyWindow.rootViewController;
-        if ([vc isKindOfClass:[UINavigationController class]])
-        {
-            vc = [(UINavigationController *)vc visibleViewController];
+//    UIWindow *keyWindow  = [UIApplication sharedApplication].keyWindow;
+//    UIViewController *vc = keyWindow.rootViewController;
+//        if ([vc isKindOfClass:[UINavigationController class]])
+//        {
+//            vc = [(UINavigationController *)vc visibleViewController];
+//        }
+//        else if ([vc isKindOfClass:[UITabBarController class]])
+//        {
+//            vc = [(UITabBarController *)vc selectedViewController];
+//        }
+//    return vc;
+
+    UIViewController* vc = [UIApplication sharedApplication].keyWindow.rootViewController;
+    while (1)
+    {
+        if ([vc isKindOfClass:[UITabBarController class]]) {
+            vc = ((UITabBarController*)vc).selectedViewController;
         }
-        else if ([vc isKindOfClass:[UITabBarController class]])
-        {
-            vc = [(UITabBarController *)vc selectedViewController];
+        if ([vc isKindOfClass:[UINavigationController class]]) {
+            vc = ((UINavigationController*)vc).visibleViewController;
         }
+        if (vc.presentedViewController) {
+            vc = vc.presentedViewController;
+        }else{
+            break;
+        }
+    }
     return vc;
 }
 
