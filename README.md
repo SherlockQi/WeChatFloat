@@ -13,6 +13,11 @@ https://github.com/SherlockQi/WeChatFloat
 ```
 //在AppDelegate中将类名传入即可
 [HKFloatManager addFloatVcs:@[@"HKSecondViewController"]];
+
+ 还需要注意以下两个代理 
+ 实现监听侧滑返回  interactivePopGestureRecognizer
+ 实现自定义push/pop动画  navigationController.delegate
+ 如被占用 可以将本项目中的实现代码进行移植.
 ```
 
 使用到的技术点
