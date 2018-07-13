@@ -89,54 +89,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WeChatFloat/HKFloatBall/HKFloatManager.m"
-            timestampString = "551091557.819324"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "+shared"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__24+[HKFloatManager shared]_block_invoke"
-                  moduleName = "WeChatFloat"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hosa/Desktop/MY/WeChatFloat/WeChatFloat/HKFloatBall/HKFloatManager.m"
-                  timestampString = "551091010.385367"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "444">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__copy_helper_block_"
-                  moduleName = "WeChatFloat"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hosa/Desktop/MY/WeChatFloat/WeChatFloat/HKFloatBall/HKFloatManager.m"
-                  timestampString = "551091010.3876441"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "12">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "WeChatFloat/Other/AppDelegate.m"
             timestampString = "550385271.318772"
             startingColumnNumber = "9223372036854775807"

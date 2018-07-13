@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIViewControllerTransitioning.h>
 
-@interface HKTransitionPush : NSObject<UIViewControllerAnimatedTransitioning>
+@interface HKTransitionPush : NSObject <UIViewControllerAnimatedTransitioning>
 
 @end

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface HKSecondViewController : UIViewController
+
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) UIImage *hk_iconImage;
 

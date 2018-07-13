@@ -9,15 +9,18 @@
 #import <UIKit/UIKit.h>
 
 @class HKFloatBall;
+
 @protocol HKFloatBallDelegate <NSObject>
 
 @optional
 - (void)floatBallDidClick:(HKFloatBall *)floatBall;
+
 - (void)floatBallBeginMove:(HKFloatBall *)floatBall;
+
 - (void)floatBallEndMove:(HKFloatBall *)floatBall;
 @end
 
 @interface HKFloatBall : UIView
-@property (nonatomic, weak) id<HKFloatBallDelegate>delegate;
-@property (nonatomic, strong) UIImageView *iconImageView;
+@property(nonatomic, weak) id <HKFloatBallDelegate> delegate;
+@property(nonatomic, strong) UIImageView *iconImageView;
 @end

@@ -11,14 +11,26 @@
 #import "HKFloatBall.h"
 
 @interface HKFloatManager : NSObject
-@property (nonatomic, strong) HKFloatBall *floatBall;
-@property (nonatomic, strong) UIViewController *floatViewController;
+@property(nonatomic, strong) HKFloatBall *floatBall;
+@property(nonatomic, strong) UIViewController *floatViewController;
 
 + (instancetype)shared;
-+ (void)addFloatVcs:(NSArray<NSString *>*)vcClass;//注意.在导航控制器实例化之后调用
+
++ (void)addFloatVcs:(NSArray<NSString *> *)vcClass;//注意.在导航控制器实例化之后调用
 - (void)beginScreenEdgePanBack:(UIGestureRecognizer *)gestureRecognizer;
 
 @end
+
+
+/*
+ 分析
+ 知识点:
+ 1.监听侧滑返回
+ 2.自定义push/pop动画
+
+ 上述两个方面,分别利用 interactivePopGestureRecognizer 和 navigationController.delegate 实现
+ **/
+
 
 /*注:1  ****** 没有出现动画 ****** 
  如遇到 navigationController.delegate 在别的地方被调用

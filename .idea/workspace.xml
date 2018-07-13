@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9d2cad1e-aca0-42fa-9941-8b951a22f995" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/WeChatFloat.xcodeproj/project.xcworkspace/xcuserdata/HeiKki.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat.xcodeproj/project.xcworkspace/xcuserdata/HeiKki.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat.xcodeproj/xcuserdata/HeiKki.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat.xcodeproj/xcuserdata/HeiKki.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat/Controller/HKFirstViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat/Controller/HKFirstViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat/Controller/HKHomeViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat/Controller/HKHomeViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat/Controller/HKSecondViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat/Controller/HKSecondViewController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat/Controller/HKSecondViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat/Controller/HKSecondViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/HKFloatManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/HKFloatManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/HKFloatManager.m" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/HKFloatManager.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/Ohter/NSObject+hkvc.m" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/Ohter/NSObject+hkvc.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/Transition/HKTransitionPop.h" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/Transition/HKTransitionPop.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/Transition/HKTransitionPop.m" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/Transition/HKTransitionPop.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/Transition/HKTransitionPush.h" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/Transition/HKTransitionPush.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/Transition/HKTransitionPush.m" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/Transition/HKTransitionPush.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/View/HKFloatAreaView.h" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/View/HKFloatAreaView.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/View/HKFloatAreaView.m" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/View/HKFloatAreaView.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/View/HKFloatBall.h" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/View/HKFloatBall.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/View/HKFloatBall.m" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat/HKFloatBall/View/HKFloatBall.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat/Other/AppDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat/Other/AppDelegate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat/Other/AppDelegate.m" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat/Other/AppDelegate.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatFloat/Other/main.m" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatFloat/Other/main.m" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_1508a903eb632b1cdc3f96ffc37add0fc594be48" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="HKFirstViewController.m" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WeChatFloat/Controller/HKFirstViewController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+              <folding>
+                <element signature="e#141#174#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/WeChatFloat/Controller/HKSecondViewController.m" />
+        <option value="$PROJECT_DIR$/WeChatFloat/Controller/HKSecondViewController.h" />
+        <option value="$PROJECT_DIR$/WeChatFloat/Controller/HKFirstViewController.m" />
+        <option value="$PROJECT_DIR$/WeChatFloat/Controller/HKHomeViewController.m" />
+        <option value="$PROJECT_DIR$/WeChatFloat/Other/AppDelegate.m" />
+        <option value="$PROJECT_DIR$/WeChatFloat/HKFloatBall/HKFloatManager.h" />
+        <option value="$PROJECT_DIR$/WeChatFloat/HKFloatBall/HKFloatManager.m" />
+        <option value="$PROJECT_DIR$/WeChatFloat/HKFloatBall/Ohter/NSObject+hkvc.m" />
+        <option value="$PROJECT_DIR$/WeChatFloat/HKFloatBall/View/HKFloatAreaView.h" />
+        <option value="$PROJECT_DIR$/WeChatFloat/HKFloatBall/View/HKFloatAreaView.m" />
+        <option value="$PROJECT_DIR$/WeChatFloat/HKFloatBall/View/HKFloatBall.h" />
+        <option value="$PROJECT_DIR$/WeChatFloat/HKFloatBall/View/HKFloatBall.m" />
+        <option value="$PROJECT_DIR$/WeChatFloat/HKFloatBall/Transition/HKTransitionPush.h" />
+        <option value="$PROJECT_DIR$/WeChatFloat/HKFloatBall/Transition/HKTransitionPush.m" />
+        <option value="$PROJECT_DIR$/WeChatFloat/HKFloatBall/Transition/HKTransitionPop.m" />
+        <option value="$PROJECT_DIR$/WeChatFloat/Other/main.m" />
+        <option value="$PROJECT_DIR$/WeChatFloat/HKFloatBall/Transition/HKTransitionPop.h" />
+        <option value="$PROJECT_DIR$/WeChatFloat/Other/AppDelegate.h" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="52" />
+    <option name="y" value="28" />
+    <option name="width" value="1167" />
+    <option name="height" value="772" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="WeChatFloat" type="1d218c8b:XcodeProjectNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="WeChatFloat" type="1d218c8b:XcodeProjectNode" />
+              <item name="WeChatFloat" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="WeChatFloat" type="1d218c8b:XcodeProjectNode" />
+              <item name="WeChatFloat" type="fcab9f18:XcodeViewNode" />
+              <item name="HKFloatBall" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="WeChatFloat" type="1d218c8b:XcodeProjectNode" />
+              <item name="WeChatFloat" type="fcab9f18:XcodeViewNode" />
+              <item name="HKFloatBall" type="fcab9f18:XcodeViewNode" />
+              <item name="Ohter" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="WeChatFloat" type="1d218c8b:XcodeProjectNode" />
+              <item name="WeChatFloat" type="fcab9f18:XcodeViewNode" />
+              <item name="HKFloatBall" type="fcab9f18:XcodeViewNode" />
+              <item name="View" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="WeChatFloat" type="1d218c8b:XcodeProjectNode" />
+              <item name="WeChatFloat" type="fcab9f18:XcodeViewNode" />
+              <item name="HKFloatBall" type="fcab9f18:XcodeViewNode" />
+              <item name="Transition" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="WeChatFloat" type="1d218c8b:XcodeProjectNode" />
+              <item name="WeChatFloat" type="fcab9f18:XcodeViewNode" />
+              <item name="Other" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="WeChatFloat" type="1d218c8b:XcodeProjectNode" />
+              <item name="WeChatFloat" type="fcab9f18:XcodeViewNode" />
+              <item name="Controller" type="fcab9f18:XcodeViewNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Cidr.FilesView" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="WeChatFloat" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="WeChatFloat" TARGET_NAME="WeChatFloat" CONFIG_NAME="Debug" SCHEME_NAME="WeChatFloat" IS_LOCATION_SIMULATION_ALLOWED="true" RUN_TARGET_PROJECT_NAME="WeChatFloat" RUN_TARGET_NAME="WeChatFloat" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d2cad1e-aca0-42fa-9941-8b951a22f995" name="Default" comment="" />
+      <created>1531446719341</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1531446719341</updated>
+      <workItem from="1531446721141" duration="697000" />
+      <workItem from="1531447436881" duration="298000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="995000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="52" y="28" width="1167" height="772" extended-state="0" />
+    <layout>
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24935733" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39971346" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3295129" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/Controller/HKFirstViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <element signature="e#141#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/Controller/HKSecondViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/Controller/HKSecondViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/Controller/HKHomeViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="e#140#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/HKFloatBall/HKFloatManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/HKFloatBall/HKFloatManager.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/HKFloatBall/Ohter/NSObject+hkvc.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/HKFloatBall/Ohter/NSObject+hkvc.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/HKFloatBall/Ohter/HKMarco.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/HKFloatBall/View/HKFloatAreaView.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/HKFloatBall/View/HKFloatAreaView.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-316">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/HKFloatBall/View/HKFloatBall.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/HKFloatBall/View/HKFloatBall.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="78" column="7" lean-forward="true" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/HKFloatBall/Transition/HKTransitionPush.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/HKFloatBall/Transition/HKTransitionPush.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/HKFloatBall/Transition/HKTransitionPop.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="69" column="38" lean-forward="true" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/Other/AppDelegate.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/Other/main.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/HKFloatBall/Transition/HKTransitionPop.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/Other/AppDelegate.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/Controller/HKFirstViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/Controller/HKHomeViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeChatFloat/Controller/HKFirstViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <element signature="e#141#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
