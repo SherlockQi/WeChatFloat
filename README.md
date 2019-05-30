@@ -275,5 +275,3 @@ UIImpactFeedbackGenerator*impactLight = [[UIImpactFeedbackGenerator alloc]initWi
     return have;
 }
 ```
-欢迎(跪求) Star.
-
